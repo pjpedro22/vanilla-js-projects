@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Canada_blank_map.svg/2000px-Canada_blank_map.svg.png")
+
+}
+
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Lobster', cursive;
+  font-size: 6rem;
+  color: rgb(64, 65, 66);
+}
+
+.city-form {
+  display: grid;
+  margin: auto;
+  padding: 2rem;
+}
+
+.city-input {
+  margin-bottom: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  border-width: 0.6rem;
+  border-color: rgb(117, 119, 122);
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.get-weather-button {
+  background-color: rgb(12, 172, 178);
+  font-family: 'Lobster', cursive;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.box {
+  border-style: solid;
+  border-width: 2px;
+  height: 30px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-color: rgb(117, 119, 122);
+}
+
+.city-weather {
+
+}
