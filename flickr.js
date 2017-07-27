@@ -40,17 +40,17 @@ function getPhotosForSearch(searchTerm) {
     getPhotosForSearch.forEach(createPhotoUrl)
   )
 }
-
-function createFlickrThumb(photoData) {
-  var link = document.createElement('a');
-  link.setAttribute('href', photoData.large);
-  link.setAttribute('target', '_blank');
-
-  var image = document.createElement('img');
-  image.setAttribute('src', photoData.thumb);
-  image.setAttribute('alt', photoData.title);
-
-  link.appendChild(image);
-
-  return link;
-}
+//
+// function createFlickrThumb(photoData) {
+//   var link = document.createElement('a');
+//   link.setAttribute('href', photoData.large);
+//   link.setAttribute('target', '_blank');
+//
+//   var image = document.createElement('img');
+//   image.setAttribute('src', photoData.thumb);
+//   image.setAttribute('alt', photoData.title);
+//
+//   link.appendChild(image);
+//
+//   return link;
+// }
