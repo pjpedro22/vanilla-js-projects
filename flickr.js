@@ -19,38 +19,19 @@ function getPhotosForSearch(searchTerm) {
     fetch(url)
     .then(response => response.json())
     //need to change this part
-    .then(data => data.response.photos.photo)
+    .then(data => data.response.photos.photo, console.log(data.response.photos.photo))
   );
 
-    var createPhotoUrl = function() {
-
-      var title = title;
-      var farm_id = farm;
-      var server_id = server;
-      var id = id;
-      var secret = secret;
-      var large = `https://farm${farm_id}.staticflickr.com/${server_id}/${id}_${secret}_q.jpg`;
-      var thumb = `https://farm${farm_id}.staticflickr.com/${server_id}/${id}_${secret}_t.jpg`;
-
-      return large;
-      return thumb;
-      return title;
-    }
-
-    getPhotosForSearch.forEach(createPhotoUrl)
-  )
+//       var title = title;
+//       var large = `https://farm${farm_id}.staticflickr.com/${server_id}/${id}_${secret}_q.jpg`;
+//       var thumb = `https://farm${farm_id}.staticflickr.com/${server_id}/${id}_${secret}_t.jpg`;
 }
-//
-// function createFlickrThumb(photoData) {
-//   var link = document.createElement('a');
-//   link.setAttribute('href', photoData.large);
-//   link.setAttribute('target', '_blank');
-//
-//   var image = document.createElement('img');
-//   image.setAttribute('src', photoData.thumb);
-//   image.setAttribute('alt', photoData.title);
-//
-//   link.appendChild(image);
-//
-//   return link;
-// }
+
+var app = document.querySelector('#app');
+var picForm = app.querySelector('.pic-form');
+var clickButton = app.querySelector('.get-pic-button')
+console.log(picForm);
+
+clickButton.addEventListener('click', function(event) {
+  console.log('hello')
+});
